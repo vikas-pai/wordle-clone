@@ -1,11 +1,6 @@
-button{
-    font-size: 16px;
-    margin: 2.5px;
-    padding: 5px;
-    cursor:pointer;
-    width:auto;
-    font-weight: 600;
-    text-align:center;
+
+h1{
+    text-align:center
 }
 .key-board{
     margin: 2rem 0;
@@ -13,12 +8,57 @@ button{
     flex-direction: column;
     align-items: center;
   }
+  .key{
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    padding: 5px;
+    padding-top:8px;
+    cursor:pointer;
+    width:25px;
+    height:25px;
+    font-weight: 600;
+    text-align:center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+  .game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .letter-row {
+    display: flex;
+  }
+  .letter-box {
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 35px;
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .filled-box {
+    border: 2px solid black;
+  }
+
   @media screen and (max-width: 720px) 
-  { button
+  { .key
     {   font-size: 12px;
-        padding: 3px;
-        margin:1.5px;
+        margin: 0.5px;
+        padding: 2px;
+        padding-top:3px;
+        width:15px;
+        height:15px;
+        border-radius: 12px;
+    }
+    .letter-box
+    {   height: 35px;
+        width: 35px;
+        font-size: 25px;
+
     }
   }
-  
-

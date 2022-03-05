@@ -10,49 +10,52 @@
     <link rel="icon shortcut" href="./Images/NYT-Wordle-Icon-32.png"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
+    
     <title>Wordle-Clone</title>
 </head>
 <body>
+    <main>
     <h1>Wordle</h1>
     <div class="game-board">
     </div>
     <div class="key-board">
         <div class="firstrow">
-            <button>Q</button>
-            <button>W</button>
-            <button>E</button>
-            <button>R</button>
-            <button>T</button>
-            <button>Y</button>
-            <button>U</button>
-            <button>I</button>
-            <button>O</button>
-            <button>P</button>
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
         </div>
         <div class="secondrow">
-            <button>A</button>
-            <button>S</button>
-            <button>D</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
         </div>
         <div class="thirdrow">
-            <button>Enter</button>
-            <button>Z</button>
-            <button>X</button>
-            <button>C</button>
-            <button>V</button>
-            <button>B</button>
-            <button>N</button>
-            <button>M</button>
-            <button>Backspace</button>
+            <div class="key" style="width:fit-content">Enter</div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key" style="width:fit-content">Backspace</div>
         </div>
 
     </div>
+    </main>
 </body>
 </html>
